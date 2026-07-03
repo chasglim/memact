@@ -204,12 +204,17 @@ fig4 <- ggplot(scenario_long, aes(x = Method, y = Rate, fill = Metric)) +
   guides(fill = guide_legend(nrow = 1, byrow = TRUE)) +
   labs(title = NULL, x = NULL, y = "Failure rate (%)", fill = NULL) +
   theme(
-    axis.text.x = element_text(angle = 0, hjust = 0.5, size = 4.8),
+    axis.text.x = element_text(angle = 0, hjust = 0.5, size = 4.4),
+    axis.text.y = element_text(size = 5.0),
+    axis.title.y = element_text(size = 5.6, margin = margin(r = 1.0)),
     legend.position = "top",
-    legend.margin = margin(-2, 0, -2, 0),
-    legend.box.margin = margin(0, 0, -3, 0),
+    legend.text = element_text(size = 4.6),
+    legend.key.size = grid::unit(2.0, "mm"),
+    legend.margin = margin(0.5, 0, 0.5, 0),
+    legend.box.margin = margin(1.0, 0, 0.6, 0),
+    strip.text = element_text(size = 5.5, face = "bold"),
     panel.grid.major.x = element_blank(),
-    plot.margin = margin(0, 3, 0, 2)
+    plot.margin = margin(1.5, 3, 0.5, 2)
   )
 
 ablation_methods <- c("Full MemAct", "w/o PrivacyFilter", "w/o ActionProbe", "w/o UsagePolicy", "w/o FreshnessCheck", "w/o SetRecheck")
@@ -304,7 +309,7 @@ fig5 <- ab_bar + sens_pcsr + sens_viol + plot_layout(widths = c(0.95, 1.05, 1.05
   plot_annotation(tag_levels = "A") &
   theme(plot.tag = element_text(size = 6.5, face = "bold"))
 
-save_pub_r(fig4, "fig4_memoryact_failure_breakdown", width_mm = 183, height_mm = 52)
+save_pub_r(fig4, "fig4_memoryact_failure_breakdown", width_mm = 183, height_mm = 46)
 save_pub_r(fig5, "fig5_memoryact_ablation", width_mm = 183, height_mm = 54)
 
 qa <- data.frame(

@@ -1,0 +1,8 @@
+{
+  "available": true,
+  "binary": "memkernel",
+  "project_dir": "<temporary-smoke-test-directory>",
+  "selected_count": 1,
+  "injected_count": 1,
+  "error": null
+}

@@ -1,0 +1,6 @@
+Method,Tasks,TSR,UsefulRecall,FalseRejection,Tokens,DraftCalls,Cand.
+NoMemory,36,0.0,0.0,100.0,0.00,0.00,0.00
+DirectInject,36,100.0,100.0,0.0,131.25,0.00,5.00
+CapsuleFilter,36,100.0,100.0,0.0,131.25,0.00,5.00
+MemAct-Lite,36,100.0,100.0,0.0,1345.00,11.00,5.00
+MemAct-Strict,36,100.0,100.0,0.0,2670.00,21.00,5.00

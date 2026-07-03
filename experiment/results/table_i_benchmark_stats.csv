@@ -1,0 +1,5 @@
+Scenario,Tenants,Tasks,Memories,Tools,Risk Types
+dev,5,40,250,6,"poisoned, privacy, stale, unsafe_delete, unsafe_modify"
+office,5,40,250,7,"poisoned, privacy, send_drift, stale"
+compliance,5,40,250,7,"poisoned, privacy, stale, submit_drift"
+Total,5,120,750,20,"cross_tenant, stale, privacy, poisoned, unsafe_action"

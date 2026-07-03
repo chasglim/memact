@@ -1,0 +1,8 @@
+Method,CandidateK,ProbeN,Tasks,TSR,PCSR,AnyViol,Tokens,DraftCalls,Cand.
+SimTopK,40,1,36,50.0,0.0,100.0,125.00,0.00,5.00
+Sim+Recency,40,1,36,75.0,0.0,100.0,128.33,0.00,5.00
+CapsuleFilter,40,1,36,16.7,16.7,83.3,111.97,0.00,6.58
+ToolGuardOnly,40,1,36,91.7,0.0,100.0,125.00,0.00,5.00
+PairwiseGate,40,1,36,8.3,8.3,91.7,118.33,0.00,40.00
+MemAct-Lite,40,1,36,50.0,50.0,50.0,1294.03,11.67,6.58
+MemAct-Strict,40,1,36,100.0,100.0,0.0,2310.83,20.92,6.58
